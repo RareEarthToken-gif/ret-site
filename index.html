@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Rare Earth Token (RET)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Rare Earth Token (RET) is a non-redeemable, metals-indexed ERC-20 asset inspired by a basket of rare earth elements." />
+  <meta name="description" content="Rare Earth Token (RET) — ERC-20 non-redeemable metals-indexed asset inspired by a basket of rare earth elements: Nd, Pr, Dy, Tb, Ho. Total supply 30,000,000 RET. No redemption rights." />
   <style>
     :root {
       --bg: #0f172a;
@@ -12,8 +12,6 @@
       --accent: #38bdf8;
       --text: #e2e8f0;
       --muted: #94a3b8;
-      --red: #f43f5e;
-      --green: #22c55e;
       --radius: 18px;
     }
     * { box-sizing: border-box; }
@@ -29,8 +27,8 @@
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
-      z-index: 10;
       background: rgba(2,6,23,0.7);
+      z-index: 20;
     }
     .nav {
       max-width: 1080px;
@@ -38,15 +36,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
       padding: .75rem 1.25rem;
     }
     .logo {
       font-weight: 700;
       letter-spacing: .08em;
-      color: #fff;
       display: flex;
-      gap: .6rem;
+      gap: .5rem;
       align-items: center;
     }
     .logo small {
@@ -68,7 +64,6 @@
       text-decoration: none;
       font-size: .8rem;
       border: none;
-      cursor: pointer;
     }
     .hero {
       max-width: 1080px;
@@ -86,11 +81,10 @@
       background: rgba(56,189,248,.08);
       border: 1px solid rgba(56,189,248,.3);
       border-radius: 9999px;
-      padding: .25rem .7rem .25rem .45rem;
+      padding: .25rem .7rem;
       font-size: .7rem;
       text-transform: uppercase;
       letter-spacing: .08em;
-      color: var(--text);
     }
     h1 {
       font-size: clamp(2.15rem, 2.8vw, 2.9rem);
@@ -116,19 +110,15 @@
       background: radial-gradient(circle at top, rgba(15,23,42,.9) 0%, rgba(2,6,23,.4) 100%);
       border: 1px solid rgba(148,163,184,.15);
       border-radius: var(--radius);
-      padding: 1.15rem 1.25rem .95rem;
-      box-shadow: 0 12px 45px rgba(0,0,0,.25);
+      padding: 1.15rem 1.25rem;
     }
     .panel-title {
       font-size: .7rem;
       text-transform: uppercase;
-      letter-spacing: .05em;
       color: var(--muted);
       margin-bottom: .35rem;
     }
-    .stat {
-      margin-bottom: .65rem;
-    }
+    .stat { margin-bottom: .65rem; }
     .stat-label {
       font-size: .7rem;
       color: var(--muted);
@@ -136,6 +126,7 @@
     .stat-value {
       font-size: 1.05rem;
       font-weight: 600;
+      word-break: break-all;
     }
     main {
       max-width: 1080px;
@@ -149,22 +140,16 @@
       background: rgba(15,23,42,.4);
       border: 1px solid rgba(148,163,184,.05);
       border-radius: var(--radius);
-      padding: 1.25rem 1.25rem 1.1rem;
+      padding: 1.25rem;
     }
-    h2 {
-      margin-top: 0;
-      font-size: 1.12rem;
-    }
-    ul {
-      padding-left: 1.1rem;
-    }
+    h2 { margin-top: 0; font-size: 1.12rem; }
+    ul { padding-left: 1.1rem; }
     code {
       background: rgba(15,23,42,.9);
       border: 1px solid rgba(148,163,184,.12);
       padding: .25rem .4rem;
       border-radius: .35rem;
       font-size: .74rem;
-      word-break: break-all;
       display: inline-block;
     }
     .muted { color: var(--muted); }
@@ -179,16 +164,11 @@
       gap: 1rem;
       border-top: 1px solid rgba(148,163,184,.05);
     }
-    a.inline {
-      color: var(--accent);
-      text-decoration: none;
-    }
+    a.inline { color: var(--accent); text-decoration: none; }
     @media (max-width: 940px) {
-      .hero, main {
-        grid-template-columns: 1fr;
-      }
-      header { position: static; }
+      .hero, main { grid-template-columns: 1fr; }
       footer { flex-direction: column; }
+      .nav { flex-wrap: wrap; gap: .75rem; }
     }
   </style>
 </head>
@@ -213,13 +193,14 @@
       <span class="badge">RET • non-redeemable metals index</span>
       <h1>Rare Earth Token (RET)</h1>
       <p class="lead">
-        ERC-20 asset inspirowany koszykiem metali ziem rzadkich: Nd, Pr, Dy, Tb oraz Ho. 
-        30,000,000 RET – 1,000,000 RET dla fundatora, 29,000,000 RET w skarbcu (treasury).
-        Brak praw do fizycznego wykupu.
+        ERC-20 asset inspired by a basket of rare-earth metals: Nd, Pr, Dy, Tb, Ho.
+        30,000,000 RET total supply — 1,000,000 RET founder reserve, 29,000,000 RET in treasury.
+        No redemption rights to physical metals.
       </p>
       <div class="actions">
-        <!-- tu wkleisz prawdziwy link z Etherscan jak już zatwierdzą -->
-        <a class="btn" href="#" title="Etherscan (soon)">View on Etherscan</a>
+        <a class="btn" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37" target="_blank" rel="noopener noreferrer">
+          View on Etherscan
+        </a>
         <a class="btn secondary" href="#docs">Open documentation</a>
       </div>
     </div>
@@ -232,7 +213,7 @@
       <div class="stat">
         <div class="stat-label">Contract address</div>
         <div class="stat-value">
-          <code>0x9278da0e7653f8f7815666d9a0d8819fc5da3f37</code>
+          <code>0x9728da076538ff9781566b6040D8819fC5da3f37</code>
         </div>
       </div>
       <div class="stat">
@@ -258,69 +239,70 @@
   <main>
     <section id="tokenomics">
       <h2>Tokenomics &amp; treasury</h2>
-      <p>Struktura emisji:</p>
+      <p>Emission structure:</p>
       <ul>
-        <li><strong>30,000,000 RET</strong> wybite do kontraktu (treasury)</li>
-        <li><strong>1,000,000 RET</strong> przekazane fundatorowi (stała pula osobista)</li>
-        <li><strong>29,000,000 RET</strong> pozostaje w kontrakcie / skarbcu na dystrybucję i płynność</li>
+        <li><strong>30,000,000 RET</strong> minted to contract (treasury)</li>
+        <li><strong>1,000,000 RET</strong> transferred to founder (permanent personal reserve)</li>
+        <li><strong>29,000,000 RET</strong> remain in treasury for distribution / liquidity</li>
       </ul>
       <p class="muted">
-        Pula fundatora nie jest przeznaczona na koszty ani płynność.
+        Founder reserve is not intended for liquidity provision or covering project costs.
       </p>
-      <h3>Koszyk metali docelowych</h3>
-      <p>Docelowy koszyk (plan): neodym (Nd), prazeodym (Pr), dysproz (Dy), terb (Tb), holm (Ho).</p>
-      <p class="muted">Uwaga: posiadacze RET nie mają prawa żądania wydania metalu – token ma charakter indeksowy.</p>
+      <h3>Target basket</h3>
+      <p>Nd (neodymium), Pr (praseodymium), Dy (dysprosium), Tb (terbium), Ho (holmium) — non-redeemable, index-style exposure.</p>
     </section>
 
     <section id="contract">
       <h2>Smart contract</h2>
-      <p>Kontrakt został wdrożony i testowany na Sepolia, a następnie przygotowany do mainnetu przy użyciu Solidity 0.8.30, bez optymalizacji i z włączonymi modułami bezpieczeństwa.</p>
+      <p>
+        Contract deployed &amp; tested on Sepolia first, then prepared for Ethereum mainnet.
+        Compiler: <strong>Solidity 0.8.30+commit.73712a01</strong>, optimization OFF, MIT license,
+        single-file verification on Etherscan, no constructor arguments.
+      </p>
       <ul>
-        <li>Standard: ERC-20</li>
-        <li>Dodatki: Burnable, Pausable (tylko owner), distribute() z treasury</li>
-        <li>Funkcje ratunkowe: <code>rescueTokens()</code>, <code>sweepETH()</code></li>
-        <li>Wymaga odblokowania (unpause) przed dodaniem do puli DEX</li>
+        <li>Standard ERC-20</li>
+        <li>Burnable &amp; Pausable (pause/unpause by owner)</li>
+        <li><code>distribute()</code> — distribution from treasury</li>
+        <li><code>rescueTokens()</code> &amp; <code>sweepETH()</code> — safety utilities</li>
+        <li>Unpause before adding to DEX/Uniswap liquidity</li>
       </ul>
       <p class="muted">
-        Weryfikacja na Etherscan: tryb „Solidity (Single file)”, kompilator 0.8.30+commit.73712a01, MIT, bez argumentów konstruktora.
+        Initial liquidity planned as RET/WETH. 1 RET ≈ 7,800 USD (target, metals-index style).
       </p>
     </section>
 
     <section id="docs">
       <h2>Documentation / Whitepaper</h2>
       <p>
-        Whitepaper opisuje: model indeksowania, politykę braku wykupu, planowaną lokalizację rezerw (Swiss freeport),
-        emisję 30M RET oraz model parowania z WETH na starcie.
-      </p>
-      <p>
-        <strong>Pliki zostaną dołączone tutaj:</strong>
+        Documents to be published together with Etherscan verification:
       </p>
       <ul>
-        <li><a class="inline" href="#">RET — whitepaper (PDF)</a> (placeholder)</li>
-        <li><a class="inline" href="#">RET — smart contract (flattened)</a> (placeholder)</li>
-        <li><a class="inline" href="#">RET — FAQ / disclosures</a> (placeholder)</li>
+        <li><a class="inline" href="#">RET — Whitepaper (PDF)</a></li>
+        <li><a class="inline" href="#">RET — Flattened Solidity source</a></li>
+        <li><a class="inline" href="#">RET — Disclosures &amp; non-redemption policy</a></li>
       </ul>
       <p class="muted">
-        Jeśli czytasz to przed publikacją na Etherscan – część odnośników może być jeszcze pusta.
+        Holders have no redemption rights to physical metals. Token represents a non-redeemable, index-style exposure.
       </p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>For business / listing / technical:</p>
+      <p>Official contact for Rare Earth Token (RET):</p>
       <p>
-        <strong>Email:</strong> <a class="inline" href="mailto:rareearthtoken@gmail.com">rareearthtoken@gmail.com</a><br />
-        <strong>Domain:</strong> rareearthret.com
+        <strong>Email:</strong>
+        <a class="inline" href="mailto:contact@rareearthret.com">contact@rareearthret.com</a><br />
+        <strong>Website:</strong> https://rareearthret.com
       </p>
       <p class="muted">
-        Wersje językowe (PL / EN) mogą być dodane później.
+        Use this address for Etherscan verification, listings, business or technical inquiries.
       </p>
     </section>
   </main>
 
   <footer>
     <div>© <span id="y"></span> Rare Earth Token (RET). All rights reserved.</div>
-    <div class="muted">Non-redeemable, metals-indexed token. No redemption rights to physical metal.</div>
+    <div class="muted">Non-redeemable, metals-indexed token. No redemption rights to physical metals.</div>
   </footer>
 
   <script>

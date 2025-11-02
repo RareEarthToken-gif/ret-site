@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="disc" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6f6f75"/>
+      <stop offset="70%" stop-color="#3a3a3f"/>
+      <stop offset="100%" stop-color="#2a2a2e"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" x2="1">
+      <stop offset="0%" stop-color="#bfc5cc"/>
+      <stop offset="100%" stop-color="#8f969c"/>
+    </linearGradient>
+    <linearGradient id="facet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f2f5"/>
+      <stop offset="100%" stop-color="#b9bec6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- metalowy krążek + rant -->
+  <circle cx="16" cy="16" r="15" fill="url(#disc)"/>
+  <circle cx="16" cy="16" r="15" fill="none" stroke="url(#rim)" stroke-width="1.2"/>
+
+  <!-- kryształy (uproszczone, czytelne w 32px) -->
+  <path d="M16 7.2 19.2 12.9 18.2 23h-4.4l-1-10.1z" fill="url(#facet)"/>
+  <path d="M16 7.2 14.8 12.9 18.2 23h-1.9z" fill="#cdd2d9" opacity=".65"/>
+  <path d="M10.4 12.3 13 16.8 12.2 23l-2.8-1.8L9.2 16z" fill="url(#facet)"/>
+  <path d="M10.4 12.3 9.2 16l2.2 7-2-1.3z" fill="#cdd2d9" opacity=".6"/>
+  <path d="M21.6 12.3 22.8 16l-.6 3.8-2.8 1.9-.8-4.9z" fill="url(#facet)"/>
+  <path d="M21.6 12.3 18.6 16.9l.8 4.8 2.8-1.9z" fill="#cdd2d9" opacity=".55"/>
+
+  <!-- cień -->
+  <ellipse cx="16" cy="23.4" rx="6.5" ry="1.2" fill="#000" opacity=".15"/>
+</svg>

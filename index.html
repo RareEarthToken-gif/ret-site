@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <title>Rare Earth Token (RET)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Rare Earth Token (RET) — ERC-20 non-redeemable metals-indexed asset inspired by a basket of rare earth elements: Nd, Pr, Dy, Tb, Ho. Total supply 30,000,000 RET. No redemption rights." />
+  <meta
+    name="description"
+    content="Rare Earth Token (RET) is an ERC-20 digital asset inspired by rare earth elements as a conceptual reference. RET is non-redeemable and does not represent ownership of physical assets, commodities, or financial instruments."
+  />
   <style>
     :root {
       --bg: #0f172a;
@@ -90,6 +93,8 @@
       font-size: clamp(2.15rem, 2.8vw, 2.9rem);
       margin: .8rem 0 .6rem;
     }
+    h2 { margin-top: 0; font-size: 1.12rem; }
+    h3 { margin: 1rem 0 .4rem; font-size: .95rem; }
     .lead {
       color: var(--muted);
       max-width: 540px;
@@ -142,7 +147,6 @@
       border-radius: var(--radius);
       padding: 1.25rem;
     }
-    h2 { margin-top: 0; font-size: 1.12rem; }
     ul { padding-left: 1.1rem; }
     code {
       background: rgba(15,23,42,.9);
@@ -180,6 +184,7 @@
         <small>Rare Earth Token</small>
       </div>
       <div style="display:flex; gap:1rem; align-items:center;">
+        <a href="#about">About</a>
         <a href="#tokenomics">Tokenomics</a>
         <a href="#contract">Smart contract</a>
         <a href="#docs">Docs</a>
@@ -190,12 +195,11 @@
 
   <div class="hero">
     <div>
-      <span class="badge">RET • non-redeemable metals index</span>
+      <span class="badge">RET • ERC-20 digital asset</span>
       <h1>Rare Earth Token (RET)</h1>
       <p class="lead">
-        ERC-20 asset inspired by a basket of rare-earth metals: Nd, Pr, Dy, Tb, Ho.
-        30,000,000 RET total supply — 1,000,000 RET founder reserve, 29,000,000 RET in treasury.
-        No redemption rights to physical metals.
+        Rare Earth Token (RET) is an ERC-20 digital asset inspired by rare earth elements as a conceptual reference.
+        RET is non-redeemable and does not represent ownership of physical assets, commodities, or financial instruments.
       </p>
       <div class="actions">
         <a class="btn" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37" target="_blank" rel="noopener noreferrer">
@@ -208,7 +212,7 @@
       <div class="panel-title">RET — core data</div>
       <div class="stat">
         <div class="stat-label">Network</div>
-        <div class="stat-value">Ethereum (Mainnet)</div>
+        <div class="stat-value">Ethereum Mainnet</div>
       </div>
       <div class="stat">
         <div class="stat-label">Contract address</div>
@@ -224,12 +228,6 @@
         <div class="stat-label">Total supply</div>
         <div class="stat-value">30,000,000 RET</div>
       </div>
-      <div class="stat">
-        <div class="stat-label">Founder wallet</div>
-        <div class="stat-value">
-          <code>0x2A1C0Aa331158186c11bBB84CBC48B880431b8dD</code>
-        </div>
-      </div>
       <p class="muted" style="font-size:.7rem; margin-top:.45rem;">
         Features: ERC20Burnable · ERC20Pausable · distribute() · rescueTokens() · sweepETH()
       </p>
@@ -237,52 +235,55 @@
   </div>
 
   <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        RET is designed as a fixed-supply digital asset with a conceptual reference to rare earth elements.
+        It is non-redeemable and does not provide ownership, claims, or redemption rights to any physical assets.
+      </p>
+      <p class="muted">
+        RET does not represent commodities, securities, or financial instruments.
+      </p>
+    </section>
+
     <section id="tokenomics">
-      <h2>Tokenomics &amp; treasury</h2>
-      <p>Emission structure:</p>
+      <h2>Tokenomics</h2>
+      <p>Supply structure:</p>
       <ul>
-        <li><strong>30,000,000 RET</strong> minted to contract (treasury)</li>
-        <li><strong>1,000,000 RET</strong> transferred to founder (permanent personal reserve)</li>
-        <li><strong>29,000,000 RET</strong> remain in treasury for distribution / liquidity</li>
+        <li><strong>30,000,000 RET</strong> total supply</li>
+        <li><strong>1,000,000 RET</strong> allocated to founder</li>
+        <li><strong>29,000,000 RET</strong> remain in treasury</li>
       </ul>
       <p class="muted">
-        Founder reserve is not intended for liquidity provision or covering project costs.
+        Founder allocation is separate from treasury holdings.
       </p>
-      <h3>Target basket</h3>
-      <p>Nd (neodymium), Pr (praseodymium), Dy (dysprosium), Tb (terbium), Ho (holmium) — non-redeemable, index-style exposure.</p>
     </section>
 
     <section id="contract">
       <h2>Smart contract</h2>
       <p>
-        Contract deployed &amp; tested on Sepolia first, then prepared for Ethereum mainnet.
+        Contract prepared for Ethereum Mainnet.
         Compiler: <strong>Solidity 0.8.30+commit.73712a01</strong>, optimization OFF, MIT license,
         single-file verification on Etherscan, no constructor arguments.
       </p>
       <ul>
         <li>Standard ERC-20</li>
-        <li>Burnable &amp; Pausable (pause/unpause by owner)</li>
-        <li><code>distribute()</code> — distribution from treasury</li>
-        <li><code>rescueTokens()</code> &amp; <code>sweepETH()</code> — safety utilities</li>
-        <li>Unpause before adding to DEX/Uniswap liquidity</li>
+        <li>Burnable &amp; Pausable</li>
+        <li><code>distribute()</code> — treasury distribution function</li>
+        <li><code>rescueTokens()</code> &amp; <code>sweepETH()</code> — administrative utilities</li>
       </ul>
-      <p class="muted">
-        Initial liquidity planned as RET/WETH. 1 RET ≈ 7,800 USD (target, metals-index style).
-      </p>
     </section>
 
     <section id="docs">
-      <h2>Documentation / Whitepaper</h2>
-      <p>
-        Documents to be published together with Etherscan verification:
-      </p>
+      <h2>Documentation</h2>
+      <p>Project documentation:</p>
       <ul>
-        <li><a class="inline" href="#">RET — Whitepaper (PDF)</a></li>
-        <li><a class="inline" href="#">RET — Flattened Solidity source</a></li>
-        <li><a class="inline" href="#">RET — Disclosures &amp; non-redemption policy</a></li>
+        <li><a class="inline" href="RET_Whitepaper_Final.pdf" target="_blank" rel="noopener noreferrer">RET — Whitepaper (PDF)</a></li>
+        <li><a class="inline" href="https://github.com/RareEarthToken-gif/ret-site" target="_blank" rel="noopener noreferrer">RET — Project repository</a></li>
+        <li><a class="inline" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37#code" target="_blank" rel="noopener noreferrer">RET — Contract source</a></li>
       </ul>
       <p class="muted">
-        Holders have no redemption rights to physical metals. Token represents a non-redeemable, index-style exposure.
+        RET is a non-redeemable digital asset and does not grant rights to underlying physical assets.
       </p>
     </section>
 
@@ -292,17 +293,31 @@
       <p>
         <strong>Email:</strong>
         <a class="inline" href="mailto:contact@rareearthret.com">contact@rareearthret.com</a><br />
-        <strong>Website:</strong> https://rareearthret.com
+        <strong>Website:</strong>
+        <a class="inline" href="https://rareearthret.com" target="_blank" rel="noopener noreferrer">rareearthret.com</a>
       </p>
       <p class="muted">
-        Use this address for Etherscan verification, listings, business or technical inquiries.
+        Use this address for project-related business or technical inquiries.
+      </p>
+
+      <h3>Transparency</h3>
+      <p>
+        <strong>Founder:</strong> Szymon Turski<br />
+        <strong>LinkedIn:</strong>
+        <a class="inline" href="https://www.linkedin.com/in/szymon-turski-872638207/" target="_blank" rel="noopener noreferrer">Profile</a><br />
+        <strong>X:</strong>
+        <a class="inline" href="https://x.com/szymon_zab48565" target="_blank" rel="noopener noreferrer">Profile</a><br />
+        <strong>GitHub:</strong>
+        <a class="inline" href="https://github.com/SzymonTurski" target="_blank" rel="noopener noreferrer">Profile</a>
       </p>
     </section>
   </main>
 
   <footer>
     <div>© <span id="y"></span> Rare Earth Token (RET). All rights reserved.</div>
-    <div class="muted">Non-redeemable, metals-indexed token. No redemption rights to physical metals.</div>
+    <div class="muted">
+      RET is a non-redeemable digital asset. It does not represent ownership of physical assets, commodities, securities, or financial instruments.
+    </div>
   </footer>
 
   <script>

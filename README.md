@@ -127,3 +127,5 @@ RET is a digital asset built around scarcity, transparency, and a conceptual the
 
 Szymon Turski  
 Founder of Rare Earth Token (RET)
+https://x.com/szymon_zab48565
+https://www.linkedin.com/in/szymon-turski-872638207/

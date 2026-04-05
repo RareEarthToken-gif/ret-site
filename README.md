@@ -5,7 +5,25 @@ Rare Earth Token (RET) is an ERC-20 digital asset built on Ethereum, conceptuall
 RET is non-redeemable and does not represent ownership of physical assets, commodities, securities, or financial instruments.
 
 ---
+How to Verify Contract Address Ownership?
 
+Table of Contents:
+Steps to verify contract address ownership
+Signing with Web3
+Signing Message Manually
+Verify Ownership for Bridged Token Contract
+Steps to verify ownership for bridged token contract
+Users can have their ownership of a contract address verified and tied to their Etherscan account. Once this is done, they will have access to submit a token update request for the contract address owned by them. This ensures that only the owner can update the token's information and prevents any other parties from hijacking the token's page, providing a sense of security.
+
+(Please note that all token update requests will be reviewed and subject to approval before being published on our platform.)
+
+Also read: What Is Verify Address Ownership?
+
+Before claiming the ownership of your contract address and updating your token's information, make sure that:
+
+The source code has already been deployed onto the Ethereum blockchain.
+The source code has already been verified (if you haven't verified it yet, please use this tool to do so).
+Steps to verify contract address ownership:
 ## Overview
 
 Rare Earth Token (RET) is designed as a fixed-supply digital asset aligned with long-term themes of technological development, resource scarcity, and industrial dependency on critical materials.

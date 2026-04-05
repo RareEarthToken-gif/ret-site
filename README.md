@@ -1,4 +1,4 @@
-#Rare Earth Token (RET)
+# Rare Earth Token (RET)
 
 Rare Earth Token (RET) is an ERC-20 digital asset built on Ethereum, conceptually referencing the strategic importance of rare earth elements in modern industry.
 

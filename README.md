@@ -1,133 +1,103 @@
-# Rare Earth Token (RET)
-
+Rare Earth Token (RET)
 Rare Earth Token (RET) is an ERC-20 digital asset built on Ethereum, conceptually referencing the strategic importance of rare earth elements in modern industry.
-
 RET is non-redeemable and does not represent ownership of physical assets, commodities, securities, or financial instruments.
+This project has not been approved by any competent authority in any Member State of the European Union.
 
----
-
-## About Rare Earth Token (RET)
-
+About Rare Earth Token (RET)
 Rare Earth Token (RET) is an independent digital asset project developed and maintained by its founder.
-
 The project is not a company, fund, or financial institution. It operates as a transparent, standalone initiative focused on the creation and maintenance of a fixed-supply ERC-20 token on Ethereum.
-
 RET does not represent ownership of any physical assets, commodities, or financial instruments. It is not asset-backed and does not provide any redemption rights.
-
-The project is governed solely through its deployed smart contract and public communication channels. No external parties have control over the contract or its treasury.
-
+The project is governed solely through its deployed smart contract and public communication channels. This contract is centralized. The founder retains full administrative control over all owner-level functions.
 The objective of RET is to exist as a simple, transparent, and scarcity-based digital asset inspired by the strategic importance of rare earth elements in modern industry.
 
----
-
-## How Rare Earth Token (RET) Operates
-
+How Rare Earth Token (RET) Operates
 RET has a fixed total supply of 30,000,000 tokens, all minted at deployment.
-
 The token operates without inflation, emission schedules, or staking mechanisms. There are no automatic distributions or reward systems.
-
-A portion of the supply is allocated to the project treasury. Tokens from the treasury may be distributed manually using the smart contract’s built-in functions when required for ecosystem-related activities.
-
-RET does not guarantee liquidity, price stability, or market demand. The token’s value is determined entirely by open market conditions.
-
+A portion of the supply is allocated to the project treasury. Tokens from the treasury may be distributed manually using the smart contract's built-in functions when required for ecosystem-related activities.
+RET does not guarantee liquidity, price stability, or market demand. The token's value is determined entirely by open market conditions.
 There are no promises of profit, yield, or financial return associated with holding RET.
-
 The project does not provide financial services and does not act as an investment vehicle.
 
----
-
-## Overview
-
+Overview
 Rare Earth Token (RET) is designed as a fixed-supply digital asset aligned with long-term themes of technological development, resource scarcity, and industrial dependency on critical materials.
-
 The project focuses on simplicity, transparency, and structural clarity rather than complex token mechanics or asset backing.
-
 RET does not provide ownership, claims, or redemption rights to any physical assets.
 
----
-
-## Purpose
-
+Purpose
 The purpose of Rare Earth Token (RET) is to establish a transparent and scarcity-based digital asset that reflects the growing relevance of strategic resources in a fully digital form.
-
 RET is not designed to replicate commodity exposure but to exist as an independent digital asset inspired by macroeconomic and industrial dynamics.
 
----
+Core Parameters
 
-## Core Parameters
+Network: Ethereum Mainnet
+Standard: ERC-20
+Total Supply: 30,000,000 RET
+Decimals: 18
+Contract Address: 0x9728da076538ff9781566b6040D8819fC5da3f37
+Contract Name: RareEarthToken
+Compiler Version: v0.8.30+commit.73712a01
+Optimization: Disabled with 200 runs
+EVM Version: Default
+License: MIT
+Source Code: Verified — Exact Match on Etherscan
 
-- Network: Ethereum Mainnet  
-- Standard: ERC-20  
-- Total Supply: 30,000,000 RET  
-- Decimals: 18  
 
-Contract address:  
-0x9728da076538ff9781566b6040D8819fC5da3f37
+Token Structure
 
----
-
-## Token Structure
-
-- 30,000,000 RET total supply  
-- 1,000,000 RET allocated to founder  
-- 29,000,000 RET remain in treasury  
+30,000,000 RET — total supply (fixed, no minting mechanism)
+1,000,000 RET — allocated to founder
+29,000,000 RET — held in contract treasury
 
 Founder allocation is separate from treasury holdings.
 
----
+Smart Contract Features
 
-## Smart Contract Features
+Standard ERC-20 implementation
+Burnable supply mechanism
+Pausable contract
+Treasury distribution via distribute()
+Administrative utilities: rescueTokens() and sweepETH()
 
-- Standard ERC-20 implementation  
-- Burnable supply mechanism  
-- Pausable contract  
-- Treasury distribution via `distribute()`  
-- Administrative utilities: `rescueTokens()` and `sweepETH()`  
-
+This contract is centralized. The founder retains full administrative control over all owner-level functions. Participants interact with this system at their own risk.
 Contract prepared with:
 
-- Solidity 0.8.30+commit.73712a01  
-- Optimization disabled  
-- MIT License  
-- No constructor arguments  
+Solidity v0.8.30+commit.73712a01
+Optimization disabled
+MIT License
+No constructor arguments
 
----
 
-## Documentation
+Documentation
 
-- Whitepaper (PDF)  
-- Project repository  
-- Contract source via Etherscan  
+Project Website
+Contract on Etherscan
 
----
 
-## Legal & Disclaimer
-
+Legal & Disclaimer
 Rare Earth Token (RET):
 
-- is non-redeemable  
-- is not backed by physical assets  
-- provides no redemption rights  
-- does not represent ownership of commodities, securities, or financial instruments  
-- does not grant rights to underlying physical assets  
+is non-redeemable
+is not backed by physical assets
+provides no redemption rights
+does not represent ownership of commodities, securities, or financial instruments
+does not grant rights to underlying physical assets
+does not promise or imply financial returns of any kind
 
 RET is a digital asset built around scarcity, transparency, and a conceptual thematic reference.
+Users are responsible for compliance with the laws of their own jurisdiction.
 
----
+Document History
+Previous versions of the whitepaper are available in the repository archive.
 
-## Links
+Links
 
-- Website: https://rareearthret.com  
-- Etherscan: https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37  
-- GitHub: https://github.com/RareEarthToken-gif/ret-site  
+Website: https://rareearthret.com
+Etherscan: https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37
+GitHub: https://github.com/RareEarthToken-gif/ret-site
 
----
 
-## Founder
-
-Szymon Turski  
+Founder
+Szymon Turski
 Founder of Rare Earth Token (RET)
-
-https://x.com/szymon_zab48565
-
 https://www.linkedin.com/in/szymon-turski-872638207/
+https://x.com/szymon_zab48565

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Rare Earth Token (RET) is an ERC-20 digital asset inspired by rare earth elements as a conceptual reference. RET is non-redeemable and does not represent ownership of physical assets, commodities, or financial instruments."
-  />  
+    content="Rare Earth Token (RET) is an ERC-20 digital asset on Ethereum inspired by the strategic importance of rare earth elements. RET is non-redeemable, has no asset backing or stable-value mechanism, and has an initial and maximum possible supply of 30,000,000 RET."
+  />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <style>
     :root {
       --bg: #0f172a;
@@ -203,7 +203,7 @@
       <span class="badge">RET • ERC-20 digital asset</span>
       <h1>Rare Earth Token (RET)</h1>
       <p class="lead">
-       RET is a fixed-supply digital asset built on Ethereum, designed as a transparent and scarcity-based token with no redemption rights or asset backing.
+        RET is an ERC-20 digital asset deployed on Ethereum Mainnet and inspired by the strategic importance of rare earth elements. It is non-redeemable, has no asset backing or value-stabilisation mechanism, and was deployed with an initial and maximum possible supply of 30,000,000 RET.
       </p>
       <div class="actions">
         <a class="btn" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37" target="_blank" rel="noopener noreferrer">
@@ -212,132 +212,214 @@
         <a class="btn secondary" href="#docs">Open documentation</a>
       </div>
     </div>
+
     <div class="panel">
       <div class="panel-title">RET — core data</div>
+
       <div class="stat">
         <div class="stat-label">Network</div>
         <div class="stat-value">Ethereum Mainnet</div>
       </div>
+
       <div class="stat">
         <div class="stat-label">Contract address</div>
         <div class="stat-value">
           <code>0x9728da076538ff9781566b6040D8819fC5da3f37</code>
         </div>
       </div>
+
       <div class="stat">
         <div class="stat-label">Decimals</div>
         <div class="stat-value">18</div>
       </div>
+
       <div class="stat">
-        <div class="stat-label">Total supply</div>
+        <div class="stat-label">Initial / maximum possible supply</div>
         <div class="stat-value">30,000,000 RET</div>
       </div>
+
       <p class="muted" style="font-size:.7rem; margin-top:.45rem;">
-        Features: ERC20Burnable · ERC20Pausable · distribute() · rescueTokens() · sweepETH()
+        No post-deployment minting · Burnable · Pausable · Owner-controlled administrative functions
       </p>
     </div>
   </div>
 
   <main>
     <section id="about">
-  <h2>About</h2>
-  <p>
-    Rare Earth Token (RET) is an independent digital asset project developed and maintained by its founder.
-  </p>
-  <p>
-    The project operates as a standalone initiative focused on a fixed-supply ERC-20 token on Ethereum.
-    RET does not represent ownership of physical assets, commodities, or financial instruments, and does not provide redemption rights.
-  </p>
-  <p class="muted">
-    The objective of RET is to exist as a simple, transparent, and scarcity-based digital asset inspired by the strategic importance of rare earth elements in modern industry.
-  </p>
-</section>
+      <h2>About</h2>
+
+      <p>
+        Rare Earth Token (RET) is an independent digital-asset project with a publicly identifiable founder.
+      </p>
+
+      <p>
+        Its connection to rare earth elements is conceptual and thematic. Rare earths provide strategic and technological context for the project, while RET itself remains a blockchain-native ERC-20 digital asset.
+      </p>
+
+      <p>
+        RET does not represent, track, redeem for, or provide ownership of physical rare earth elements or other commodities. It does not grant equity, dividend, profit-sharing, debt, redemption or holder-governance rights.
+      </p>
+
+      <p class="muted">
+        RET does not use the price, market value, inventory or ownership of rare earth elements as a mechanism for determining or supporting the value of the token.
+      </p>
+    </section>
 
     <section id="tokenomics">
       <h2>Tokenomics</h2>
-      <p>Supply structure:</p>
+
+      <p>Deployment allocation:</p>
+
       <ul>
-        <li><strong>30,000,000 RET</strong> total supply</li>
-        <li><strong>1,000,000 RET</strong> allocated to founder</li>
-        <li><strong>29,000,000 RET</strong> remain in treasury</li>
+        <li><strong>30,000,000 RET</strong> initial and maximum possible supply</li>
+        <li><strong>1,000,000 RET</strong> initial founder allocation</li>
+        <li><strong>29,000,000 RET</strong> initial contract treasury balance</li>
       </ul>
+
+      <p>
+        No additional RET can be minted after deployment. Total supply may decrease through token burning.
+      </p>
+
       <p class="muted">
-        Founder allocation is separate from treasury holdings.
+        Deployment figures describe the initial allocation. Current balances and current total supply should be verified directly on-chain.
       </p>
     </section>
-<section id="operations">
-  <h2>How RET Operates</h2>
-  <p>
-    RET has a fixed total supply of 30,000,000 tokens. There is no inflation, emission schedule, or automatic reward mechanism.
-  </p>
-  <p>
-    A portion of tokens remains in treasury and may be distributed over time through manual on-chain actions based on project development and ecosystem needs.
-  </p>
-  <p class="muted">
-    RET does not guarantee liquidity, price stability, or financial returns. All token movements remain publicly visible on-chain.
-  </p>
-</section>
+
+    <section id="operations">
+      <h2>How RET Operates</h2>
+
+      <p>
+        RET was deployed with 30,000,000 tokens created once by the constructor. The deployed contract contains no mechanism capable of creating additional RET after deployment.
+      </p>
+
+      <p>
+        Treasury RET may be distributed through owner-controlled on-chain functions. The project does not state a fixed future treasury distribution schedule on this website.
+      </p>
+
+      <p class="muted">
+        RET does not guarantee a market price, minimum value, liquidity, market demand or financial return. If secondary-market trading becomes available, market conditions may include supply, demand and available liquidity.
+      </p>
+    </section>
+
     <section id="contract">
       <h2>Smart contract</h2>
+
       <p>
-        Contract prepared for Ethereum Mainnet.
-        Compiler: <strong>Solidity 0.8.30+commit.73712a01</strong>, optimization OFF, MIT license,
-        single-file verification on Etherscan, no constructor arguments.
+        RET is deployed on Ethereum Mainnet. Compiler: <strong>Solidity 0.8.30+commit.73712a01</strong>, optimization disabled, MIT license, source code verified as an exact match on Etherscan.
       </p>
+
       <ul>
-        <li>Standard ERC-20</li>
-        <li>Burnable &amp; Pausable</li>
-        <li><code>distribute()</code> — treasury distribution function</li>
-        <li><code>rescueTokens()</code> &amp; <code>sweepETH()</code> — administrative utilities</li>
+        <li>Standard ERC-20 functionality</li>
+        <li><code>burn()</code> / <code>burnFrom()</code> — supply reduction</li>
+        <li><code>pause()</code> / <code>unpause()</code> — global pause control</li>
+        <li><code>distribute()</code> — treasury distribution</li>
+        <li><code>rescueTokens()</code> — token recovery utility</li>
+        <li><code>sweepETH()</code> — ETH recovery utility</li>
+        <li><code>transferOwnership()</code> / <code>renounceOwnership()</code> — administrative ownership controls</li>
       </ul>
+
+      <p>
+        The contract contains centralized administrative controls. Owner-level functions are controlled by the Ethereum address returned by <code>owner()</code>. The founder identity and the technical owner address are distinct concepts.
+      </p>
+
+      <p class="muted">
+        The owner cannot mint additional RET, impose a transfer tax, rebase holder balances, blacklist an individual wallet, or directly seize RET from holder wallets through a special owner function. The deployed RET contract contains no upgrade or proxy mechanism.
+      </p>
     </section>
 
     <section id="docs">
       <h2>Documentation</h2>
-      <p>Project documentation:</p>
+
+      <p>Current public project documentation:</p>
+
       <ul>
-        <li><a class="inline" href="RET_Whitepaper_v2.1.pdf" target="_blank" rel="noopener noreferrer">RET — Whitepaper (PDF)</a></li>
-        <li><a class="inline" href="https://github.com/RareEarthToken-gif/ret-site" target="_blank" rel="noopener noreferrer">RET — Project repository</a></li>
-        <li><a class="inline" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37#code" target="_blank" rel="noopener noreferrer">RET — Contract source</a></li>
+        <li>
+          <a class="inline" href="whitepaper%20v2.2.pdf" target="_blank" rel="noopener noreferrer">
+            RET — Whitepaper v2.2 (PDF)
+          </a><br />
+          <span class="muted">
+            Current project and technical information document.
+          </span>
+        </li>
+
+        <li style="margin-top:.65rem;">
+          <a class="inline" href="RET%20Classification%20Memorandum.pdf" target="_blank" rel="noopener noreferrer">
+            RET — Classification Memorandum (PDF)
+          </a><br />
+          <span class="muted">
+            Working analytical classification memorandum. It is not a regulatory decision, legal opinion or formal Article 8(4) MiCA explanation.
+          </span>
+        </li>
+
+        <li style="margin-top:.65rem;">
+          <a class="inline" href="https://github.com/RareEarthToken-gif/ret-site" target="_blank" rel="noopener noreferrer">
+            RET — Project repository
+          </a>
+        </li>
+
+        <li style="margin-top:.65rem;">
+          <a class="inline" href="https://etherscan.io/address/0x9728da076538ff9781566b6040D8819fC5da3f37#code" target="_blank" rel="noopener noreferrer">
+            RET — Verified contract source
+          </a>
+        </li>
       </ul>
+
       <p class="muted">
-        RET is a non-redeemable digital asset and does not grant rights to underlying physical assets.
+        Whitepaper v2.2 is a project and technical information document and is not presented as a formal MiCA crypto-asset white paper. The Classification Memorandum records a working analytical classification and does not replace any formal regulatory procedure that may become applicable to future RET activity.
       </p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
+
       <p>Official contact for Rare Earth Token (RET):</p>
+
       <p>
         <strong>Email:</strong>
-        <a class="inline" href="mailto:contact@rareearthret.com">contact@rareearthret.com</a><br />
+        <a class="inline" href="mailto:contact@rareearthret.com">
+          contact@rareearthret.com
+        </a><br />
+
         <strong>Website:</strong>
-        <a class="inline" href="https://rareearthret.com" target="_blank" rel="noopener noreferrer">rareearthret.com</a>
+        <a class="inline" href="https://rareearthret.com" target="_blank" rel="noopener noreferrer">
+          rareearthret.com
+        </a>
       </p>
+
       <p class="muted">
         Use this address for project-related business or technical inquiries.
       </p>
 
       <h3>Transparency</h3>
+
       <p>
         <strong>Founder:</strong> Szymon Turski<br /><br />
 
-<strong>LinkedIn (Founder & Project):</strong>
-<a class="inline" href="https://www.linkedin.com/in/szymon-turski-872638207/" target="_blank" rel="noopener noreferrer">Szymon Turski</a><br />
+        <strong>LinkedIn (Founder &amp; Project):</strong>
+        <a class="inline" href="https://www.linkedin.com/in/szymon-turski-872638207/" target="_blank" rel="noopener noreferrer">
+          Szymon Turski
+        </a><br />
 
-<strong>X (Official Project Updates):</strong>
-<a class="inline" href="https://x.com/szymon_zab48565" target="_blank" rel="noopener noreferrer">RET Updates</a><br />
+        <strong>X (Official Project Updates):</strong>
+        <a class="inline" href="https://x.com/szymon_zab48565" target="_blank" rel="noopener noreferrer">
+          RET Updates
+        </a><br />
 
-<strong>GitHub (Project Repository):</strong>
-<a class="inline" href="https://github.com/RareEarthToken-gif/ret-site" target="_blank" rel="noopener noreferrer">RET Repository</a>
+        <strong>GitHub (Project Repository):</strong>
+        <a class="inline" href="https://github.com/RareEarthToken-gif/ret-site" target="_blank" rel="noopener noreferrer">
+          RET Repository
+        </a>
       </p>
     </section>
   </main>
 
   <footer>
-    <div>© <span id="y"></span> Rare Earth Token (RET). All rights reserved.</div>
+    <div>
+      © <span id="y"></span> Rare Earth Token (RET). All rights reserved.
+    </div>
+
     <div class="muted">
-      RET is a non-redeemable digital asset. It does not represent ownership of physical assets, commodities, securities, or financial instruments.
+      RET is a non-redeemable digital asset. It provides no ownership of physical rare earths, no asset backing, no redemption claim and no mechanism intended to maintain a stable value by reference to an external asset or value.
     </div>
   </footer>
 
